@@ -101,6 +101,7 @@ class __TwigTemplate_f6595595ec9a9b6b8ffa5d443cda6512c9b49a5552584a43423455eebef
         </a>
 
         <!-- Divider -->
+        
         <hr class=\"sidebar-divider my-0\">
 
         <!-- Nav Item - Dashboard -->
@@ -119,15 +120,15 @@ class __TwigTemplate_f6595595ec9a9b6b8ffa5d443cda6512c9b49a5552584a43423455eebef
                 <i class=\"fas fa-fw fa-wrench\"></i>
                 <span>Gestion produits</span>
             </a>
-                <div id=\"collapseUtilities2\" class=\"collapse\" aria-labelledby=\"headingUtilities\"
+            <div id=\"collapseUtilities2\" class=\"collapse\" aria-labelledby=\"headingUtilities\"
                 data-parent=\"#accordionSidebar\">
                 <div class=\"bg-white py-2 collapse-inner rounded\">
                     <a class=\"collapse-item\" href=\"";
-        // line 69
+        // line 70
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("addProduct");
         echo "\">Ajout produit</a>
                     <a class=\"collapse-item\" href=\"";
-        // line 70
+        // line 71
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("listProduct");
         echo "\">Voir les produits</a>
                     <a class=\"collapse-item\" href=\"\">Gestion catégorie produit</a>
@@ -269,7 +270,7 @@ class __TwigTemplate_f6595595ec9a9b6b8ffa5d443cda6512c9b49a5552584a43423455eebef
 
                     <li class=\"nav-item dropdown no-arrow\">
                         <a class=\"nav-link \" href=\"";
-        // line 209
+        // line 210
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
         echo "\" role=\"button\">
                             <span class=\"mr-2 d-none d-lg-inline text-gray-600 small\">Voir le site</span>
@@ -296,9 +297,9 @@ class __TwigTemplate_f6595595ec9a9b6b8ffa5d443cda6512c9b49a5552584a43423455eebef
 
                 <!-- Page Heading -->
                 ";
-        // line 233
-        $this->displayBlock('body', $context, $blocks);
         // line 234
+        $this->displayBlock('body', $context, $blocks);
+        // line 235
         echo "
             </div>
             <!-- /.container-fluid -->
@@ -327,23 +328,23 @@ class __TwigTemplate_f6595595ec9a9b6b8ffa5d443cda6512c9b49a5552584a43423455eebef
 
     <!-- core  -->
     <script src=\"";
-        // line 261
+        // line 262
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendors/jquery/jquery-3.4.1.js"), "html", null, true);
         echo "\"></script>
     <script src=\"";
-        // line 262
+        // line 263
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendors/bootstrap/bootstrap.bundle.js"), "html", null, true);
         echo "\"></script>
 
     <!-- bootstrap affix -->
     <script src=\"";
-        // line 265
+        // line 266
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendors/bootstrap/bootstrap.affix.js"), "html", null, true);
         echo "\"></script>
 
     <!-- wow.js -->
     <script src=\"";
-        // line 268
+        // line 269
         echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("vendors/wow/wow.js"), "html", null, true);
         echo "\"></script>
 
@@ -389,7 +390,7 @@ class __TwigTemplate_f6595595ec9a9b6b8ffa5d443cda6512c9b49a5552584a43423455eebef
 
     }
 
-    // line 233
+    // line 234
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -420,7 +421,7 @@ class __TwigTemplate_f6595595ec9a9b6b8ffa5d443cda6512c9b49a5552584a43423455eebef
 
     public function getDebugInfo()
     {
-        return array (  393 => 233,  374 => 11,  347 => 268,  341 => 265,  335 => 262,  331 => 261,  302 => 234,  300 => 233,  273 => 209,  131 => 70,  127 => 69,  79 => 24,  75 => 23,  64 => 15,  57 => 11,  45 => 1,);
+        return array (  394 => 234,  375 => 11,  348 => 269,  342 => 266,  336 => 263,  332 => 262,  303 => 235,  301 => 234,  274 => 210,  132 => 71,  128 => 70,  79 => 24,  75 => 23,  64 => 15,  57 => 11,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -472,6 +473,7 @@ class __TwigTemplate_f6595595ec9a9b6b8ffa5d443cda6512c9b49a5552584a43423455eebef
         </a>
 
         <!-- Divider -->
+        
         <hr class=\"sidebar-divider my-0\">
 
         <!-- Nav Item - Dashboard -->
@@ -490,7 +492,7 @@ class __TwigTemplate_f6595595ec9a9b6b8ffa5d443cda6512c9b49a5552584a43423455eebef
                 <i class=\"fas fa-fw fa-wrench\"></i>
                 <span>Gestion produits</span>
             </a>
-                <div id=\"collapseUtilities2\" class=\"collapse\" aria-labelledby=\"headingUtilities\"
+            <div id=\"collapseUtilities2\" class=\"collapse\" aria-labelledby=\"headingUtilities\"
                 data-parent=\"#accordionSidebar\">
                 <div class=\"bg-white py-2 collapse-inner rounded\">
                     <a class=\"collapse-item\" href=\"{{ path('addProduct') }}\">Ajout produit</a>

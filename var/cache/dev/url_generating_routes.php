@@ -6,6 +6,8 @@ return [
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::home'], [], [['text', '/']], [], [], []],
     'addProduct' => [[], ['_controller' => 'App\\Controller\\ProductController::addProduct'], [], [['text', '/product/add']], [], [], []],
     'listProduct' => [[], ['_controller' => 'App\\Controller\\ProductController::listProduct'], [], [['text', '/product/list']], [], [], []],
+    'editProduct' => [['id'], ['_controller' => 'App\\Controller\\ProductController::editProduct'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/product/edit']], [], [], []],
+    'deleteProduct' => [['id'], ['_controller' => 'App\\Controller\\ProductController::deleteProduct'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/product/delete']], [], [], []],
     '_preview_error' => [['code', '_format'], ['_controller' => 'error_controller::preview', '_format' => 'html'], ['code' => '\\d+'], [['variable', '.', '[^/]++', '_format', true], ['variable', '/', '\\d+', 'code', true], ['text', '/_error']], [], [], []],
     '_wdt' => [['token'], ['_controller' => 'web_profiler.controller.profiler::toolbarAction'], [], [['variable', '/', '[^/]++', 'token', true], ['text', '/_wdt']], [], [], []],
     '_profiler_home' => [[], ['_controller' => 'web_profiler.controller.profiler::homeAction'], [], [['text', '/_profiler/']], [], [], []],
